@@ -1,0 +1,63 @@
+,id,Name_pickle,Model,Description,Score,MAE,MAPE,MSE,RMSE
+0,1,model_V1,LinearRegression(n_jobs=-1),"Regresion Lineal, todas variables, scalar",0.3173799411691845,106657636.89752184,2301.643886003787,4.358168104054737e+16,208762259.61736324
+1,2,model_V2,LinearRegression(n_jobs=-1),"Regresion Lineal, no variables label, scalar",0.321573166752151,104503313.95320392,1015.764484499543,4.331396576098041e+16,208120075.34349108
+2,3,model_V3,LinearRegression(n_jobs=-1),"Regresion Lineal, no variables label, log y scalar",0.5402629863227639,90171023.73470902,126.92716358840369,8.128037943656901e+16,285097140.3514406
+3,4,model_V4,"ElasticNet(alpha=0.03727593720314938, l1_ratio=0.9500000000000001)","Regresion Lineal, Regularizacion (Lasso, Ridge, Elastic), log y scalar",0.5469916783267057,82173037.6331066,126.8948128115596,5.307954234101493e+16,230389978.82072675
+4,5,model_V5,LinearRegression(n_jobs=-1),"Regresion polinomial degree 2, solo variables numericas",0.500418967863121,101363565.24716972,99.7998827720466,4.086116220014807e+17,639227363.3078302
+5,6,model_V6,"DecisionTreeRegressor(max_depth=6, min_samples_leaf=34, min_samples_split=51,
+                      random_state=33)","Decision Arbol Regresion, RandomSearch, log y scalar",0.4717912960774452,78787125.08696216,92.18393325248064,3.638589614354649e+16,190750874.5551288
+6,7,model_V7,"RandomForestRegressor(max_depth=19, max_leaf_nodes=69, min_samples_leaf=14,
+                      n_estimators=220, n_jobs=-1, random_state=71)","Random Forest Regression, RandomSearch, log y scalar",0.5069365419183713,76259888.36655986,75.12249111323256,3.6028738383060924e+16,189812376.7910325
+7,8,model_V8,"SVR(C=3, epsilon=0.42)","SVR, RandomSearch, log y scalar",0.5406555379823911,72743432.64201115,44.65836369890949,3.095537430746695e+16,175941394.52518544
+8,9,model_V9,"RandomForestRegressor(max_depth=14, max_leaf_nodes=42, min_samples_leaf=13,
+                      n_estimators=40, n_jobs=-1, random_state=20)","Random Forest Regressor Pipe, RandomSearch, log y scalar",0.9003844860367528,53716289.37039585,0.8629815373535531,2.016932073006737e+16,142018733.7292773
+9,10,model_V10,"XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+             eta=0.08, gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.0799999982,
+             max_delta_step=0, max_depth=9, max_leaf_nodes=61,
+             min_child_weight=1, missing=nan, monotone_constraints='()',
+             n_estimators=95, n_jobs=16, num_parallel_tree=1, predictor='auto',
+             random_state=0, reg_alpha=0, reg_lambda=1, scale_pos_weight=1,
+             subsample=1, tree_method='exact', validate_parameters=1,
+             verbosity=None)","XGBRegressor Pipe, RandomSearch, log y scalar",0.9123524838337098,51407587.37256627,0.6553211785753993,2.014459115006185e+16,141931642.52576607
+10,11,model_V11,"XGBRegressor(alpha=0.8590342757761328, base_score=0.5, booster='gbtree',
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1.0,
+             enable_categorical=False, gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.01, max_delta_step=0,
+             max_depth=5, min_child_weight=4, missing=nan,
+             monotone_constraints='()', n_estimators=3000, n_jobs=16,
+             num_parallel_tree=1, predictor='auto', random_state=0,
+             reg_alpha=0.8590343, reg_lambda=0.03067985609310814,
+             scale_pos_weight=1, subsample=1, subsample_opt=0.7,
+             tree_method='exact', validate_parameters=1, verbosity=None)","XGBRegressor Optuna optimization, log",0.9101453074125664,50426266.53095501,0.7583553219653462,1.7043299404331726e+16,130549988.1437441
+11,12,model_V12,"XGBRegressor(alpha=0.0017219869538556629, base_score=0.5, booster='gbtree',
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.9,
+             enable_categorical=False, gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.01, max_delta_step=0,
+             max_depth=5, min_child_weight=3, missing=nan,
+             monotone_constraints='()', n_estimators=1000, n_jobs=16,
+             num_parallel_tree=1, predictor='auto', random_state=0,
+             reg_alpha=0.00172198692, reg_lambda=0.08212458153660918,
+             scale_pos_weight=1, subsample=1, subsample_opt=1.0,
+             tree_method='exact', validate_parameters=1, verbosity=None)","XGBRegressor Optuna optimization, scal, log",0.911847464757383,49695558.70499707,0.7266155621149668,1.574000078095548e+16,125459159.81288683
+12,13,model_V13,"XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+             eta=0.13, gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.129999995,
+             max_delta_step=0, max_depth=10, max_leaf_nodes=73,
+             min_child_weight=1, missing=nan, monotone_constraints='()',
+             n_estimators=55, n_jobs=16, num_parallel_tree=1, predictor='auto',
+             random_state=0, reg_alpha=0, reg_lambda=1, scale_pos_weight=1,
+             subsample=1, tree_method='exact', validate_parameters=1,
+             verbosity=None)","XGBRegressor Pipe, RandomSearch, log y scalar",0.907656790991462,51478169.40716984,0.6762604313581211,1.8045673556909344e+16,134334186.10655048
+13,14,my_model,"XGBRegressor(alpha=0.039437543823996786, base_score=0.5, booster='gbtree',
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1.0,
+             enable_categorical=False, gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.01, max_delta_step=0,
+             max_depth=5, min_child_weight=4, missing=nan,
+             monotone_constraints='()', n_estimators=1500, n_jobs=16,
+             num_parallel_tree=1, predictor='auto', random_state=0,
+             reg_alpha=0.0394375436, reg_lambda=0.005479842380087256,
+             scale_pos_weight=1, subsample=1, subsample_opt=0.4,
+             tree_method='exact', validate_parameters=1, verbosity=None)","XGBRegressor Optuna optimization, scal, log. final, eliminar columns",0.9117164216269928,49417499.56700658,0.7331960033086625,1.5248637448690066e+16,123485373.42005354
